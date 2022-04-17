@@ -1,0 +1,17 @@
+
+/*SCSS Rules for mobile devices*/
+@media screen and (max-width: 600px){
+    h6{
+        margin-left: 20px;
+    }
+
+    .driver-mobile-names{
+        margin-left: 44px;
+        margin-bottom: 13px;
+    }
+
+    .round-mobile-names{
+        font-weight: 700;
+    }
+    
+}

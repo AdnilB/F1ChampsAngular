@@ -1,0 +1,115 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+.label{
+    display: inline;
+    float: left;
+}
+
+.ng-select{
+    display: inline; 
+    float: left; 
+    margin-left: 20px;
+    margin-top: -2px;
+    width: 200px;
+}
+
+.winner-highlight{
+   color: orange;
+}
+
+.btn{
+    margin-right:7px;
+}
+
+.float-right{
+    float: right;
+}
+
+.float-left{
+    float: left;
+}
+
+.main-container-height{
+    height: 311px;
+}
+
+.pagination-padding-top{
+    padding-top: 5px;
+}
+
+.pagination{
+    display: block;
+}
+
+
+/*SCSS Rules for mobile devices*/
+@media screen and (max-width: 600px){
+
+    body{
+        font-size: 0.84rem;
+        margin-bottom: 10px;
+    }
+    h6{
+        font-size: 0.87rem;
+    }
+
+    h5{
+        font-size: 0.9rem;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+
+    .btn{
+        font-size: 0.9em;
+    }
+
+    .label{
+        float: left;
+    }
+    
+    .ng-select{
+        float: left;
+        width: 160px;
+        margin-left: 10px;
+        margin-top: -7px;
+
+    }
+
+    .pb-5{
+        padding-bottom: 7px !important;
+    }
+
+
+    .main-container-height{
+        height: 57vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .pagination-buttons{
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .pagination-text{
+        display: flex;
+        width: 38%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .pagination-padding-top{
+        padding-top: 2px;
+    }
+
+    .pagination{
+        position: fixed;
+        bottom: 9px;
+    }
+}

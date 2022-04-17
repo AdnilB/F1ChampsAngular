@@ -1,0 +1,67 @@
+    <!--Year list selection dropdown-->
+    <div class="row">
+        <div class="col pt-4 pb-5">
+            <label class="label">Select Year:</label>
+            <ng-select [items]="years" 
+                       [(ngModel)]="selectedYear"
+                       appendTo="body"
+                       (change) = "onYearSelectChange()">
+            </ng-select>
+        </div>
+    </div>
+    <!--End of year list selection dropdown-->
+
+    <!--Header descriptions-->
+    <div class="row">
+        <div class="col" *ngIf="!mobileView">
+            <h3>Circuit names</h3>
+        </div>
+
+        <div class="col" *ngIf="!mobileView">
+            <h3>Date</h3>
+        </div>
+        
+        <div class="col">
+            <h3>Winner Names</h3>
+        </div>
+    </div>
+    <!--End Header descriptions-->
+    
+    <!--Rows of F1 championship circuit and winners names-->
+    <div class="main-container-height">
+        <ng-container *ngFor="let item of winnersList; let i= index;" >
+    
+            <div class="row" [ngClass]="{'winner-highlight': seasonWinner == item.Results[0].Driver.driverId}" >
+                <div class="col" *ngIf="!mobileView" >
+                    <h6>{{item.round}}) {{item.raceName}}</h6>
+                </div>
+                <div class="col" *ngIf="!mobileView" >
+                    <h6>{{item.date}}</h6>
+                </div>
+                <h6  class="round-mobile-names" *ngIf="mobileView">{{item.round}}) {{item.raceName}}</h6>
+                <div class="col">
+                    <h6 class="driver-mobile-names">{{item.Results[0].Driver.familyName}} {{item.Results[0].Driver.givenName}}</h6>
+                </div>
+        
+            </div> 
+        
+        </ng-container>
+        <div class="row" *ngIf="winnersList.length == 0">
+            <h6>No data</h6>
+        </div >
+        
+    </div>
+    <!--End of Rows of F1 championship circuit and winners names-->
+
+   <!--Pagination details-->
+    <div class="row pagination-padding-top" *ngIf="winnersList.length > 0 ">
+        <pagination-detail
+        [total] = "totalItems"
+        [currentNumber] = "currentNumber"
+        [limit] = "limit"
+        (nextPage)="getWinnersPerYear($event)"
+        (previousPage)="getWinnersPerYear($event)"
+        ></pagination-detail>
+    </div>
+    <!--End of Pagination details-->
+    
