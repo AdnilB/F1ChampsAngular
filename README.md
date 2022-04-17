@@ -4,7 +4,7 @@ A single page web application was created to display a list of F1 racing world c
 
 Users are able to select a year ranging from 2005 to present year by use of a dropdown select component. The corresponding data for the selected year is generated and displayed right after a year has been selected.
 
-The data used for the project is retreive from the api's available at http://ergast.com. All api's used have been paginated to control the number of records retreived and to keep it to a small number improving overal response time when retreiving data.
+The data used for the project is retreived from the api's available at http://ergast.com. All api's used have been paginated to control the number of records retrieved and to keep it to a small number improving overal response time when retreiving data.
 
 The application has also been optimised for mobile device viewing.
 
