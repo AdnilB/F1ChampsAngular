@@ -4,11 +4,11 @@ A single page web application was created to display a list of F1 racing world c
 
 Users are able to select a year ranging from 2005 to present year by use of a dropdown select component. The corresponding data for the selected year is generated and displayed right after a year has been selected.
 
-The data used for the project is retreived from the api's available at http://ergast.com. All api's used have been paginated to control the number of records retrieved and to keep it to a small number improving overal response time when retreiving data.
+The data used for the project is retrieved from the api's available at http://ergast.com. All api's used have been paginated to control the number of records retrieved and to keep it to a small number improving overall response time when retrieving data.
 
-The application has also been optimised for mobile device viewing.
+The application has also been optimized for mobile device viewing.
 
-Unit test have been completed for each component used in the application. These tests can be run by entering the 'ng serve' command into the terminal. 
+Unit test have been completed for each component used in the application. These tests can be run by entering the 'ng test' command into the terminal. 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.16.
 
