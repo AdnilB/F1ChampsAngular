@@ -1,6 +1,9 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { ChampionsYearlyDto, PointStandingDto, RacesDto, ResultsDto } from '../data-models/data-models';
+import { RacesDto} from '../data-models/data-models';
 import { ApiService } from '../services/apiService.service';
+
+/** The List Page Component contains a year dropdown component 
+ * that when selected displays the championship data per year **/
 
 @Component({
   selector: 'app-list-page',

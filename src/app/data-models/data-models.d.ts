@@ -1,5 +1,8 @@
 
-/** Data Models used to structure api data received **/
+/** Data Models are used to structure api data received
+ * to only the necessary data for the F1 Championship 
+ * application.
+ * */
 
 export interface ChampionsYearlyDto{
     MRData: RaceTableDto;
@@ -49,12 +52,12 @@ export interface Pagination{
     total: string,
 }
 
-export interface SeasionStandingsMainDto{
-    MRData: SeasionStandingsDto;
+export interface SeasonStandingsMainDto{
+    MRData: SeasonStandingsDto;
 }
 
 
-export interface SeasionStandingsDto{
+export interface SeasonStandingsDto{
     StandingsTable: StandingsListsDto;
 }
 
