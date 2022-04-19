@@ -14,8 +14,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## How to run the project
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`
+Step1: Download the project.
 
+Step2: Navigate to project route. Run 'npm i' to install the node packages (Node has to be installed in order to run this command)
+
+Step3: Run `ng serve` for a dev server. Navigate to `http://localhost:4200/` on your browser to access the application.
 
 ## How to run the unit tests
 
